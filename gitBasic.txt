@@ -1,0 +1,34 @@
+Initialize the Git Repo
+	git init
+
+Commit Added Files
+
+	git commit -m 'Added my project'
+
+Add new remote origin (in this case, GitHub)
+
+	git remote add origin https://github.com/chetin4ever/modernJavascript.git
+
+Push to GitHub
+
+	git push -u -f origin master
+
+With this, there are a few things to note. 
+
+	The -f flag stands for force. 	This will automatically overwrite everything in the remote 		directory. 
+	We're only using it here to overwrite the README that GitHub automatically initialized. 
+	If you skipped that, the -f flag isn't really necessary.
+
+	The -u flag sets the remote origin as the default. This lets you later 	easily just do git push and 	git pull without having to specifying an origin since we always want GitHub in thiscase.
+
+===============================================================================================
+
+allTogether
+
+
+git init
+git add -A
+git commit -m 'Added my project'
+git remote add origin https://github.com/chetin4ever/modernJavascript.git
+git push -u -f origin master
+===================================================================================================
